@@ -3,6 +3,7 @@ import './App.scss';
 // import { useEffect, useState } from 'react';
 import { NavBar } from  './components/NavBar';
 import { Footer } from './components/Footer';
+import { Pagination } from './components/Pagination';
 
 
 export const App = () => {
@@ -34,6 +35,7 @@ export const App = () => {
             </div>
           </div>
         ))} */}
+        <Pagination/>
       <Footer />
     </div>
 
