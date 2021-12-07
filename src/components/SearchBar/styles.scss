@@ -1,0 +1,30 @@
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  flex-grow: 1;
+  background-color: var(--bg-searchbar)!important;
+  border-color: var(--border-color-searchbar)!important;
+  color: var(--input-text);
+}
+
+.inputSearch {
+  border-radius: 0px 20px 20px 0px ;
+  border-color: var(--border-color-searchbar);
+  background-color: var(--bg-searchbar);
+  border-left: none ;
+  padding-left: 0;
+  color: var(--input-text);
+}
+
+.boxIcon {
+  border-radius: 20px 0px  0px 20px ;
+  border-color: var(--border-color-searchbar);
+  background-color: var(--bg-searchbar);
+  border-right: none ;
+  color: var(--color-icons);
+  padding-right: 3px;
+}
+
+.input-group {
+  max-width: 40%;
+}
