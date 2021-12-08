@@ -1,7 +1,7 @@
 import './App.scss';
 // import { createClient } from 'pexels';
 // import { useEffect, useState } from 'react';
-import { NavBar } from  './components/NavBar';
+import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { Pagination } from './components/Pagination';
 
@@ -23,10 +23,9 @@ export const App = () => {
   // },[]);
 
 
-
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       {/* {Fotos.map((foto, index) => (
           <div key={index} className="container">
             <img className='image' src={foto.src.tiny} alt="" />
@@ -35,7 +34,11 @@ export const App = () => {
             </div>
           </div>
         ))} */}
-        <Pagination/>
+      <Pagination
+        prevPage={handlePrevPage}
+        nextPage={handleNextPage}
+        currentPage={Page}
+      />
       <Footer />
     </div>
 

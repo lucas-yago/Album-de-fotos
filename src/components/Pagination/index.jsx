@@ -2,13 +2,13 @@ import "./styles.scss";
 import { Button } from "react-bootstrap";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
-export const Pagination = () => {
+export const Pagination = ({prevPage, nextPage, currentPage}) => {
   return (
     <div className="pagination">
 
-      <Button className="button" variant="outline-secondary"><HiArrowLeft /></Button>
-      page 1
-      <Button className="button" variant="outline-secondary"><HiArrowRight /></Button>
+      <Button className="button" onClick={prevPage}  href='#/'><HiArrowLeft /></Button>
+      page {currentPage}
+      <Button className="button"  onClick={nextPage} href='#/'><HiArrowRight /></Button>
 
     </div>
   );
