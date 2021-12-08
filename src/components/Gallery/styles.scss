@@ -1,0 +1,9 @@
+.container-galery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px 7px;
+}
