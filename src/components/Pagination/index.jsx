@@ -6,7 +6,7 @@ export const Pagination = ({prevPage, nextPage, currentPage}) => {
   return (
     <div className="pagination">
 
-      <Button className="button" onClick={prevPage}  href='#/'><HiArrowLeft /></Button>
+      <Button className="button"  onClick={prevPage}  href='#/'><HiArrowLeft /></Button>
       page {currentPage}
       <Button className="button"  onClick={nextPage} href='#/'><HiArrowRight /></Button>
 

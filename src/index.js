@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import { App } from './App';
-import './custom.scss';
+import './themes.scss';
 import reportWebVitals from './reportWebVitals';
 
 
