@@ -1,3 +1,4 @@
+
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from "react-icons/ai";
 import './styles.scss';
@@ -24,5 +25,20 @@ export const Footer = () => {
 
       </Container>
     </Navbar>
+
+
+
+
+    // <div className="footer font-small bg-white  pt-4">
+    //   <div className="footer-contentt text-center py-3">
+    //     <hr />
+    //     © 2021 Copyright:<a href="https://mdbootstrap.com/">PHOTOS</a>
+    //     <div className="social-networks">
+    //       <AiFillFacebook className="icon" />
+    //       <AiFillTwitterSquare className="icon" />
+    //       <AiFillInstagram className="icon" />
+    //     </div>
+    //   </div>
+    // </div>
   );
-}
+};
