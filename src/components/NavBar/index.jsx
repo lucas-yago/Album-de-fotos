@@ -5,12 +5,10 @@ import { SearchBar } from '../SearchBar';
 import { AiOutlineUser } from "react-icons/ai";
 import { useState, useEffect } from 'react';
 
-
-
-
-export const NavBar = () => {
-
+export const NavBar = ({ searchPhotos }) => {
   const [DarkTheme, setDarkTheme] = useState(false);
+  const Url = "https://api.pexels.com/v1/search";
+
   const toggle = () => { setDarkTheme(!DarkTheme) }
 
   useEffect(() => {
@@ -21,15 +19,19 @@ export const NavBar = () => {
       document.body.classList.remove('dark-theme')
 
     }
-    console.log(DarkTheme)
   }, [DarkTheme]);
+
+
+  const handlesearchPhotos = (search) => {
+    searchPhotos(Url, search)
+  };
 
   return (
     <Navbar sticky="top" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">PHOTOS</Navbar.Brand>
 
-        <SearchBar />
+        <SearchBar onEnter={handlesearchPhotos} />
 
         <Navbar.Toggle aria-controls="navbar-menu" />
         <Navbar.Collapse className="navbarcollapse">

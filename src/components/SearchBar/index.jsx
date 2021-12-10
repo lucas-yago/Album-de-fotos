@@ -3,13 +3,13 @@ import { useState } from 'react';
 import { InputGroup, FormControl } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 
-export const SearchBar = () => {
+export const SearchBar = ({ onEnter }) => {
 
   const [InputText, setInputText] = useState('')
 
   const handleKeyUp = (key) => {
     if (key.code === 'Enter' && InputText !== '') {
-      console.log(InputText)
+      onEnter(InputText)
       setInputText('')
     };
   };
@@ -23,7 +23,7 @@ export const SearchBar = () => {
         className="inputSearch"
         placeholder="Search ..."
         value={InputText}
-        onChange={(e) => setInputText(e.target.value)}
+        onChange={(input) => setInputText(input.target.value)}
         onKeyUp={handleKeyUp}
       />
     </InputGroup>
