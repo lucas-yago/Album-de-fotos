@@ -5,7 +5,6 @@ import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { Pagination } from './components/Pagination';
 import { Gallery } from './components/Gallery';
-import { Spinner } from 'react-bootstrap';
 
 export const App = () => {
   const [Url, setUrl] = useState("https://api.pexels.com/v1/curated");
@@ -71,7 +70,7 @@ export const App = () => {
   return (
     <div id="home"  className="App">
       <NavBar searchPhotos={searchPhotos} />
-      <Spinner className="spinner" hidden={!Loading} animation="border" role="status"/>
+      {/* <Spinner className="spinner" hidden={!Loading} animation="border" role="status"/> */}
       <Gallery Data={Data} visibility={Loading}/>
       <Pagination
         prevPage={handlePrevPage}
