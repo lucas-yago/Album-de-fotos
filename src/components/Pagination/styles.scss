@@ -7,10 +7,13 @@
   justify-content: space-evenly;
 }
 
-
-.button{
+#button{
   width: 60px;
   height: 38px;
   border-radius: 20px;
-  // background-color: var(--color-icons);
+}
+
+#button:disabled{
+  background-color: #888;
+  cursor: not-allowed;
 }

@@ -7,3 +7,12 @@
 
 @import "./components/Pagination/styles.scss";
 
+.App{
+  min-height: 100vh;
+}
+
+.spinner{
+  left:50%;
+  top:50%;
+  position: relative;
+}
