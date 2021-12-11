@@ -2,9 +2,8 @@ import './App.scss';
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { NavBar } from './components/NavBar';
-import { Footer } from './components/Footer';
-import { Pagination } from './components/Pagination';
 import { Gallery } from './components/Gallery';
+import { Footer } from './components/Footer';
 
 export const App = () => {
   const [Url, setUrl] = useState("https://api.pexels.com/v1/curated");
@@ -21,7 +20,7 @@ export const App = () => {
       },
       params: {
         query: search,
-        per_page: 20
+        per_page: 60
       }
     })
       .then(res => {
@@ -41,23 +40,23 @@ export const App = () => {
         authorization: '563492ad6f91700001000001a4beb2375b2b461fb9c852f78e1f8df5'
       },
       params: {
-        per_page: 24
+        per_page: 60
       }
     })
-    .then(res => {
-      setData(res.data)
-      setLoading(false)
-    })
-    .catch(err => {
-      console.log(err)
-      setLoading(false)
-    })
+      .then(res => {
+        setData(res.data)
+        setLoading(false)
+      })
+      .catch(err => {
+        console.log(err)
+        setLoading(false)
+      })
   };
 
   useEffect(() => {
     curatedPhotos(Url)
   }, [Url]);
-
+  console.log(Data)
 
   const handleNextPage = () => {
     setUrl(Data.next_page)
@@ -68,14 +67,12 @@ export const App = () => {
   };
 
   return (
-    <div id="home"  className="App">
+    <div id="home" className="App">
       <NavBar searchPhotos={searchPhotos} />
-      {/* <Spinner className="spinner" hidden={!Loading} animation="border" role="status"/> */}
-      <Gallery Data={Data} visibility={Loading}/>
-      <Pagination
+      <Gallery Data={Data}
+        visibility={Loading}
         prevPage={handlePrevPage}
         nextPage={handleNextPage}
-        Data={Data}
       />
       <Footer />
     </div>
