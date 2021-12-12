@@ -1,0 +1,27 @@
+:root{
+  --body-bg:  #e5e5e5;
+  --bg-navbar: #FFF;
+  --bg-footer: #FFF;
+  --text-color: #3A3B44;
+  --color-icons: #767676;
+  --bg-searchbar: #e5e5e5;
+  --border-color-searchbar: #ced4da;
+  --input-text: #3A3B44;
+  --shadow-box: #767676;
+}
+
+.dark-theme{
+  --body-bg: #2A2B35;
+  --bg-navbar: #1A1A23;
+  --bg-footer: #1A1A23;
+  --text-color: #EAEAED;
+  --color-icons: #767676;
+  --bg-searchbar: #2A2B35;
+  --border-color-searchbar: #767676;
+  --input-text: #EAEAED;
+  --shadow-box: #1A1A23;
+}
+
+body{
+  background-color: var(--body-bg);
+}

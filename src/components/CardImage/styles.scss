@@ -1,0 +1,37 @@
+.card-container {
+  border: none;
+  background-color: transparent;
+	box-shadow: 3px -3px 15px -10px  var(--shadow-box);
+  transition: transform 100ms ease-in-out;
+}
+
+#author{
+  opacity: 0;
+}
+
+.card-container:hover {
+  transform: scale(1.06);
+}
+
+.card-container:hover .image{
+  filter: brightness(75%);
+}
+
+.card-container:hover #author{
+  opacity: 1;
+  color: #FFF;
+}
+
+.authorIcon{
+  width: 30px;
+  height: 30px;
+}
+
+.card-info {
+  top: auto;
+  bottom: 0;
+}
+
+.image{
+  min-width: 250px;
+}

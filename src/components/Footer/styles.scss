@@ -1,0 +1,36 @@
+.footer{
+  display: flex;
+  position: relative !important;
+  bottom: 0;
+  width: 100% ;
+  justify-content: center !important;
+  background-color: var(--bg-footer);
+}
+
+.container{
+  display: block !important;
+
+  hr{
+    border: 1px solid var(--text-color);
+    margin: 1rem 0 0 0 ;
+  }
+
+  .container-content{
+    justify-content: space-between;
+    align-items: center;
+  };
+};
+
+.navbar-text{
+  color: var(--text-color)!important;
+}
+
+.nav-link {
+  padding: 0 !important;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+  color: var(--color-icons);
+}

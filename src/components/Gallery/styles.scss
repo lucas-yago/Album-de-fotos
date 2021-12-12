@@ -1,0 +1,21 @@
+.container-gallery{
+  min-height: 85vh;
+}
+
+.galery-area{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px 7px;
+}
+
+.spinner{
+  top:50vh;
+  left:50%;
+  position:absolute;
+  margin-top:-50px;
+  margin-left:-15px;
+}
