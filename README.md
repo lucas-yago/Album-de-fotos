@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+<h1>Album de fotos</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+> Status do Projeto: :heavy_check_mark:  ( em desenvolvimento )
 
-### `yarn start`
+### Tópicos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-### `yarn test`
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-### `yarn build`
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Descrição do projeto
 
-### `yarn eject`
+<p align="justify">
+    O projeto consiste em um Galeria de fotos que utiliza de fotos disponibilizadas pela api <a href="https://www.pexels.com/pt-br/api/">Pexel api</a>
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Funcionalidades
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:heavy_check_mark: Imagens selecionadas
 
-## Learn More
+:heavy_check_mark: Buscar por imagens
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:heavy_check_mark: Paginação lazy loading
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:heavy_check_mark: Tema escuro
 
-### Code Splitting
+:heavy_check_mark: Responsividade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Layout ou Deploy da Aplicação :dash:
 
-### Making a Progressive Web App
+> Link do deploy da aplicação no netlify: [https://ly-album-de-fotos.netlify.app](https://ly-album-de-fotos.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Pré-requisitos
 
-### Deployment
+:warning: [Node](https://nodejs.org/en/download/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Como rodar a aplicação :arrow_forward:
+
+No terminal, clone o projeto:
+
+```bash
+$ git clone https://github.com/Lucas-yago/Album-de-fotos.git
+```
+
+Entre na pasta do projeto :
+
+```bash
+$ cd Album-de-fotos
+```
+
+Agora você precisara instalar, use o comando:
+
+```bash
+$ npm install
+```
+
+Rode o  projeto localmente usando:
+
+```bash
+$ npm start
+```
+
+**`npm start`** Executa o aplicativo no modo de desenvolvimento.
+Abra [http://localhost:3000](http://localhost:3000/) para visualizá-lo no navegador.
+
+A página será recarregada se você fizer edições.
+Você também verá quaisquer erros de fiapos no console.
+
+
+
+## Linguagens, dependencias e libs utilizadas :books:
+
+- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [React icons](https://react-icons.github.io/react-icons)
+- [Axios](https://axios-http.com/docs/intro)
+- [Node-sass ]([node-sass - npm (npmjs.com)](https://www.npmjs.com/package/node-sass))
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+- [Bootstrap](https://getbootstrap.com/)
+
+
+
+## Implementações futuras
+
+:memo: usuarios
+
+:memo: imagens favoritas
+
+
+
+## Licença
+
+The [MIT License]() (MIT)
+
+Copyright :copyright: Ano2021 - Album de fotos
+
