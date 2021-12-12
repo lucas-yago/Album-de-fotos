@@ -7,7 +7,7 @@ export const SearchBar = ({ onEnter }) => {
   const [InputText, setInputText] = useState('')
 
   const handleKeyUp = (key) => {
-    if (key.code === 'Enter' && InputText !== '') {
+    if (key.key === "Enter" && InputText !== '') {
       onEnter(InputText)
       setInputText('')
     };
