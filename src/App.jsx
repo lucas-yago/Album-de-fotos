@@ -9,7 +9,6 @@ export const App = () => {
   const [Url, setUrl] = useState("https://api.pexels.com/v1/curated");
   const [Data, setData] = useState();
   const [Loading, setLoading] = useState(false);
-  // key-secundaria =  '563492ad6f917000010000010e9b810d92534db68d3947a7985ed9f4'
 
   const searchPhotos = (Url, search) => {
     console.log('antes do get')
@@ -56,7 +55,6 @@ export const App = () => {
   useEffect(() => {
     curatedPhotos(Url)
   }, [Url]);
-  console.log(Data)
 
   const handleNextPage = () => {
     setUrl(Data.next_page)
@@ -76,7 +74,6 @@ export const App = () => {
       />
       <Footer />
     </div>
-
   );
 }
 

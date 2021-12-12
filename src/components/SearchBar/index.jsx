@@ -4,7 +4,6 @@ import { InputGroup, FormControl } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const SearchBar = ({ onEnter }) => {
-
   const [InputText, setInputText] = useState('')
 
   const handleKeyUp = (key) => {
@@ -13,7 +12,6 @@ export const SearchBar = ({ onEnter }) => {
       setInputText('')
     };
   };
-
 
   return (
     <InputGroup >

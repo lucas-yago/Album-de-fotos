@@ -1,4 +1,3 @@
-
 import './styles.scss';
 import { Navbar, Nav, Container, Form } from 'react-bootstrap';
 import { SearchBar } from '../SearchBar';
@@ -14,13 +13,11 @@ export const NavBar = ({ searchPhotos }) => {
   useEffect(() => {
     if (DarkTheme) {
       document.body.classList.add('dark-theme')
-
-    } else {
+    }
+    else {
       document.body.classList.remove('dark-theme')
-
     }
   }, [DarkTheme]);
-
 
   const handlesearchPhotos = (search) => {
     searchPhotos(Url, search)
@@ -30,12 +27,9 @@ export const NavBar = ({ searchPhotos }) => {
     <Navbar sticky="top" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">PHOTOS</Navbar.Brand>
-
         <SearchBar onEnter={handlesearchPhotos} />
-
         <Navbar.Toggle aria-controls="navbar-menu" />
         <Navbar.Collapse className="navbarcollapse">
-
           <Form className="container-theme" >
             <Form.Check
               type="switch"
@@ -44,7 +38,6 @@ export const NavBar = ({ searchPhotos }) => {
               onChange={toggle}
             />
           </Form>
-
           <Nav >
             <Nav.Link href="#user"><AiOutlineUser className="userIcon" /></Nav.Link>
           </Nav>
@@ -52,5 +45,4 @@ export const NavBar = ({ searchPhotos }) => {
       </Container>
     </Navbar>
   );
-
 };

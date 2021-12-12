@@ -4,10 +4,12 @@ import { CardImage } from "../CardImage"
 import { Pagination } from "../Pagination";
 
 export const Gallery = ({ Data, visibility, prevPage, nextPage }) => {
-  const Photos = Data ? Data.photos : []
+  const Photos = Data ? Data.photos : [];
+
   return (
     <div className="container-gallery">
-      {visibility ? <Spinner className="spinner" animation="border" role="status" variant="primary" />
+      {visibility
+        ? <Spinner className="spinner" animation="border" role="status" variant="primary" />
         : (<div className="galery-area" >
           {Photos.map((photo, index) => (
             <CardImage
