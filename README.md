@@ -99,7 +99,7 @@ Você também verá quaisquer erros de fiapos no console.
 - [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 - [React icons](https://react-icons.github.io/react-icons)
 - [Axios](https://axios-http.com/docs/intro)
-- [Node-sass ]([node-sass - npm (npmjs.com)](https://www.npmjs.com/package/node-sass))
+- [Node-sass ](https://www.npmjs.com/package/node-sass)
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Bootstrap](https://getbootstrap.com/)
 
