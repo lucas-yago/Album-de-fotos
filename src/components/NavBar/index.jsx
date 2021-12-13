@@ -6,6 +6,8 @@ import { useState, useEffect } from 'react';
 
 export const NavBar = ({ searchPhotos }) => {
   const [DarkTheme, setDarkTheme] = useState(false);
+  const [navtheme, setNavtheme] = useState("light")
+
   const Url = "https://api.pexels.com/v1/search";
 
   const toggle = () => { setDarkTheme(!DarkTheme) }
@@ -13,9 +15,11 @@ export const NavBar = ({ searchPhotos }) => {
   useEffect(() => {
     if (DarkTheme) {
       document.body.classList.add('dark-theme')
+      setNavtheme("dark")
     }
     else {
       document.body.classList.remove('dark-theme')
+      setNavtheme("light")
     }
   }, [DarkTheme]);
 
@@ -24,7 +28,7 @@ export const NavBar = ({ searchPhotos }) => {
   };
 
   return (
-    <Navbar sticky="top" expand="lg">
+    <Navbar sticky="top" variant={navtheme} expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">PHOTOS</Navbar.Brand>
         <SearchBar onEnter={handlesearchPhotos} />
